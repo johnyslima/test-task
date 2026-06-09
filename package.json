@@ -1,0 +1,12 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "sass scss/main.scss css/main.css --style=expanded",
+    "watch:css": "sass scss/main.scss css/main.css --watch --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

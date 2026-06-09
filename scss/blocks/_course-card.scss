@@ -1,0 +1,106 @@
+@use '../base/variables' as *;
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  box-shadow: $shadow-card;
+  overflow: hidden;
+}
+
+.course-card__media {
+  position: relative;
+  overflow: hidden;
+  background-color: $color-card-bg;
+  background-image:
+    radial-gradient(circle at 72% 28%, rgba(255, 255, 255, 0.45) 0, transparent 42%),
+    radial-gradient(circle at 28% 72%, rgba(255, 255, 255, 0.25) 0, transparent 38%);
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 390 / 240;
+}
+
+.course-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.course-card__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px 24px 24px;
+}
+
+.course-card__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-bottom: 8px;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $color-white;
+}
+
+.course-card__badge--marketing {
+  background-color: $color-marketing;
+}
+
+.course-card__badge--management {
+  background-color: $color-management;
+}
+
+.course-card__badge--hr {
+  background-color: $color-hr;
+}
+
+.course-card__badge--design {
+  background-color: $color-design;
+}
+
+.course-card__badge--development {
+  background-color: $color-development;
+}
+
+.course-card__title {
+  margin: 0;
+  min-height: calc(1.5em * 2);
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: $color-title;
+}
+
+.course-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.course-card__price {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: $color-primary;
+}
+
+.course-card__separator {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: $color-text;
+}
+
+.course-card__author {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $color-text;
+}
